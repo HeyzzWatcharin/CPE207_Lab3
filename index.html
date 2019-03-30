@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Name is ?</title>
+    <link rel="stylesheet" type="text/css" href="Function.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      /* bar menu */
+        .container-2 {
+          display: inline-block;
+          cursor: pointer;
+          }
+
+        .bar1, .bar2, .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .change .bar1 {
+          -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar2 {opacity: 0;}
+
+        .change .bar3 {
+          -webkit-transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(45deg) translate(-8px, -8px);
+        }
+        /* end bar menu */
+        #myImg {
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        
+        #myImg:hover {opacity: 0.7;}
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+        
+        /* Modal Content (image) */
+        .modal-content {
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
+        }
+        
+        /* Caption of Modal Image */
+        #caption {
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
+          text-align: center;
+          color: #ccc;
+          padding: 10px 0;
+          height: 150px;
+        }
+        
+        /* Add Animation */
+        .modal-content, #caption {  
+          -webkit-animation-name: zoom;
+          -webkit-animation-duration: 0.6s;
+          animation-name: zoom;
+          animation-duration: 0.6s;
+        }
+        
+        @-webkit-keyframes zoom {
+          from {-webkit-transform: scale(0)} 
+          to {-webkit-transform: scale(1)}
+        }
+        
+        @keyframes zoom {
+          from {transform: scale(0.1)} 
+          to {transform: scale(1)}
+        }
+        
+        /* The Close Button */
+        .close {
+          position: absolute;
+          top: 15px;
+          right: 35px;
+          color: #f1f1f1;
+          font-size: 40px;
+          font-weight: bold;
+          transition: 0.3s;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #bbb;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px){
+          .modal-content {
+            width: 100%;
+          }
+        }
+        /* <!-- Zoom in / Zoom out the image--> */
+        </style>
+        
+</head>
+
+<body background="page2.png">
+  
+  <!---Start Head Bar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="Lab2.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="Gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Extrainformation.html">Contact</a>
+              </li>
+            </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  <!---start Head index-->
+  <div class="container">
+    <div class="text-1">
+      <h1 style="text-shadow:2px 2px 5px red">Hello How are U?</h1>
+      <p class="text-1_1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae fuga aut enim ratione quod consequatur blanditiis in at vero, nobis repudiandae optio natus ut reprehenderit iusto facilis veniam maxime commodi.</p>
+    </div>
+    <div class="clr"></div>
+  <!-- start index 2 coloum myself-->
+  <div class="container">
+    <div class="clearfix box2" >
+      <img class="img2" src="sadsa.jpg" alt="Stamp" width="400px" height="300px">
+    <tr>
+      <td>
+        <table>
+            <h1 style="text-shadow:2px 2px 5px rgb(250, 4, 4)">Watcharin Rachadet</h1>
+            <h4>Age : 20 yearold , height : 182 cm  , weight : 80 kg </h4>
+            <h4><a href="mailto:watcharinrachadet123@gmail.com">Email : watcharinrachadet123@gmail.com</a></h3>
+            <h4 style="font-size:25px" > Tell.(+66)-821-822325</h4>
+        </table>
+      </td>
+    </tr>
+    </div>
+  </div>
+  <br>
+  <div class="clr"></div>
+  <!-- Start index 3 colum Profile_Skill -->
+    <div >
+          <div class="block text-1_1 " lass="clearfix" style="border: 3px solid royalblue; padding: 5px; background-color: rgb(1, 45, 190)" >
+          <h3 style="text-shadow:2px 2px 5px red">Education</h3>
+          <p>Currently studying at Faculty Computer engineering  Chiang Mai University</p>
+          </div>
+        <div class="block text-1_1" class="clearfix" style="border: 3px solid royalblue; padding: 5px; background-color: rgb(233, 19, 3)" >
+        <h3 style="text-shadow:2px 2px 5px blue">Skill</h3>
+        <p>Programming: C++ ,C ,C# ,Java ,Verilog ,HTML ,CSS ,HardwareDesigh and I can fly and I have the power like Superman. I can shoot a laser beam from my eyes and I can sleep while I close my eyes.</p>
+        </div>
+        <div class="block text"  class="clearfix" style="border: 3px solid royalblue; padding: 5px; background-color: rgb(27, 27, 27)" >
+          <h3 style="text-shadow:2px 2px 5px red" class="text3">Experien</h3>
+          <p class="text3">Product design competition.I used to run and hit the house wall. I used to laugh and cry at the same time. I used to eat my own mucus. I used to sleep in the bathroom. I used to secretly eat sweets in the classroom.</p>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <div id="main-block">
+          <h3 style="text-shadow:3px 3px 5px black">Can you tell me</h3>
+          <p>If you get to know the content after this, then wouldn't you look strange to me?
+          </p>
+        </div>
+    
+        <div id="sidebar">
+          <p>The following content is only a small part of all, because don't believe it. Don't look at me wrong when what you are reading is just a text.
+        </div>
+        <br>
+        <div class="clr"></div>
+  <!-- Number bar -->
+      <div class="container">
+        <table class="last-text">
+          <tr>
+              <tr>
+                  <p class="last-text" align="center" style="text-shadow:3px 3px 5px blue"> Watcharin Rachadet &mdash; <a href="mailto:watcharinrachadet123@gmail.com" style="text-shadow:3px 3px 5px red">watcharinrachadet123@gmail.com</a> &mdash; (+66) - 821-822325</p> 
+                  </tr>
+          </tr>
+          
+      </table>
+      </div>
+      <div class="clr"></div>
+  </div>
+  <!-- social media -->
+  <a class="fix-me button" href="https://www.facebook.com/profile.php?id=100004957666951">Social</a>
+  <a class="fix-me-2 button-2" href="https://youtu.be/BIirSKtuoE8">The Secrets</a>
+  <div style="margin-top:100px;"></div>
+  <!----End last colum-->
+    <audio hidden autoplay controls loop> 
+           <source src="Post Malone, Swae Lee - Sunflower (Lyrics) (Spider-Man Into the Spider-Verse).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<html lang="en" class="gr__potikanond_github_io"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Name is ?</title>
+    <link rel="stylesheet" type="text/css" href="Function.css">
+  <!-- 3. Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <script type="text/javascript"> 
+ 
+      var phone1 = "()- 0123456789";
+      var alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+       
+      function controlchars(thestr,controlstr)
+      {
+        if(controlstr.indexOf(thestr.value.charAt(thestr.value.length - 1)) == -1)
+        {
+          var x=thestr.value.length - 1;
+          thestr.value=thestr.value.substring(0,x)
+        }
+      }
+      </script>
+      
+  
+  </head>
+  
+  <body data-gr-c-s-loaded="true" background="page2.png">
+    <!---Start Head Bar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="Gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Extrainformation.html">Contact</a>
+              </li>
+            </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  <!-- 4.   -->
+  <div class="container">
+      <div class="clearfix box2" >
+          <div class="container mt-4">
+        <!-- 5. h1.container.mt-4 span.text-primary     -->
+            <h1 class="display-4 text-center">
+        <!-- 6. i.fas fa-book-open text-primary: fontawesome icon       -->
+              <i class="fas fa-book-open text-primary" style="text-shadow:2px 2px 5px red"></i><u>My</u> <span class="text-1_3"><u>Contact</u></span></h1>
+        <!-- 7. add form and inputs     -->
+            <form id="book-form">
+              <div class="form-group">
+                <label for="name"style="text-shadow:2px 2px 5px red"><u><h4>Name</h4></u></label>
+                <input type="text" id="name" class="form-control" maxlength="100" onkeyup="javascript:controlchars(this,alpha);">
+              </div>
+              <div class="form-group">
+                <label for="email"style="text-shadow:2px 2px 5px red"><u><h4>E-mail</h4></u></label>
+                <input type="text" id="email" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="phone"style="text-shadow:2px 2px 5px red"><u><h4>Phone</h4></u></label>
+                <input type="text" id="phone" class="form-control" maxlength="100" onkeyup="javascript:controlchars(this,phone1);">
+              </div>
+              <input type="submit" value="Add Subject" class="btn btn-primary btn-block">
+            </form>
+        <!-- 8. table for output     -->
+            <table class="table table-striped mt-5">
+              <thead>
+                <tr>
+                  <th class="text-1_2" style="text-shadow:2px 2px 5px red"><u><h6>Name</h6></u></th>
+                  <th class="text-1_2" style="text-shadow:2px 2px 5px red"><u><h6>E-mail</h6></u></th>
+                  <th class="text-1_2" style="text-shadow:2px 2px 5px red"><u><h6>Phone</h6></u></th>
+                  <th></th>
+                </tr>
+              </thead>
+        <!-- 9. add placeholder to insert list of book       -->
+              <tbody id="book-list"><tr>
+              <td>Watcharin Rachadet</td>
+              <td>watcharinrachadet123@gmail.com</td>
+              <td>0821822325</td>
+              <td><a href="#" class="btn btn-danger btn-sm delete"> Delete </a></td>
+            </tr></tbody>
+            </table>
+          </div>
+        
+          <script src="Test.js"></script>
+        </div>
+      </div>
+      <br>
+
+      <div class="container">
+          <table class="last-text">
+            <tr>
+                <tr>
+                    <p class="last-text" align="center" style="text-shadow:3px 3px 5px blue"> Watcharin Rachadet &mdash; <a href="mailto:watcharinrachadet123@gmail.com" style="text-shadow:3px 3px 5px red">watcharinrachadet123@gmail.com</a> &mdash; (+66) - 821-822325</p> 
+                    </tr>
+            </tr>
+            
+        </table>
+        </div>
+            
+  
+      <div class="clr"></div>
+    </div>
+    <!-- social media -->
+    <a class="fix-me button" href="https://www.facebook.com/profile.php?id=100004957666951">Social</a>
+    <a class="fix-me-2 button-2" href="https://youtu.be/BIirSKtuoE8">The Secrets</a>
+    <div style="margin-top:100px;"></div>
+    <!----End last colum-->
+      <audio hidden autoplay controls loop> 
+             <source src="Post Malone, Swae Lee - Sunflower (Lyrics) (Spider-Man Into the Spider-Verse).mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+  </body></html>

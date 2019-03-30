@@ -1,0 +1,196 @@
+.text-1{
+    background-color: rgb(68, 67, 67);
+    color: black;
+    border: 5px rgb(240, 38, 2) solid;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+#my-form {
+    padding: 2rem;
+    background: #f4f4f4;
+  }
+
+.text-1_1{
+    color : white;
+}
+.text-1_2{
+    color : rgb(234, 234, 245);
+}
+.text-1_3{
+    color : rgb(30, 6, 252);
+}
+
+.text-2{
+    background-color: rgba(172, 191, 255,0.7);
+    color: black;
+    border: 5px royalblue solid;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.box2{
+    background-color:   rgba(172,191,255,0.7);
+    color: rgb(17, 14, 14);
+    border: 5px royalblue solid;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.container-2{
+    /* margin: auto; */
+    width: 100%;
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.clearfix{
+    overflow: auto;
+    
+}
+
+.button{ 
+	background-color:#333;
+	color:#fff;
+	padding:10px 15px;
+    border:none;
+    /* button social */
+}
+
+.button-2{ 
+	background-color:#333;
+	color:#fff;
+	padding:10px 15px;
+    border:none;
+    /* button Secrets */
+}
+
+.button3{ 
+	background-color:rgb(252, 5, 5);
+	color:white;
+	padding:10px 15px;
+     border:none;
+   
+    /* button social */
+}
+
+#main-block{
+	float:left;
+	width:70%;
+	padding:15px;
+	box-sizing: border-box;
+	background-color:#555555;
+	color: #fff;
+	margin-top: 20px;
+}
+
+#main-block2{
+	float:left;
+	width:70%;
+	padding:15px;
+	box-sizing: border-box;
+	background-color:rgb(6, 6, 216);
+	color: #fff;
+	margin-top: 20px;
+}
+
+.intro2{
+    padding: 15px;
+}
+
+#sidebar{
+	float:right;
+	width:30%;
+	background-color:#333;
+	color:#fff;
+	padding:15px;
+	box-sizing: border-box;
+	margin-top: 20px;
+}
+
+#sidebar2{
+	float:right;
+	width:30%;
+	background-color : rgb(231, 3, 3);
+	color:#fff;
+	padding:15px;
+	box-sizing: border-box;
+	margin-top: 20px;
+}
+
+.img2{
+    float: right;
+}
+
+.block{
+	float:left;
+	width:33.3%;
+	border:1px solid #ccc;
+	padding:10px;
+	box-sizing:border-box;
+}
+
+.fix-me{
+    position: fixed;;
+    left:0px;
+    top: 300px;
+} 
+
+.fix-me-2{
+    position: fixed;;
+    left:0px;
+    top: 350px;
+} 
+
+.last-text{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.text3{
+    
+    color:white;
+}
+
+.text2{
+    background-color: rgb(32, 8, 247);
+    color:black;
+}
+
+.text1{
+    background-color: rgb(252, 5, 5);
+    color:black;
+}
+
+.box-1{
+	background-color:#333;
+	color:#fff;
+	border:5px red solid;
+    padding: 20px;
+	margin:20px 0;
+}
+
+.box-1 h1{
+	font-weight:800;
+	font-style:italic;
+	text-decoration:underline;
+	text-transform:uppercase;
+	letter-spacing: 0.2em;
+	word-spacing: 1em;
+} 
+
+
+/* page 2 */
+
+
